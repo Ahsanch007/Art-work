@@ -403,6 +403,9 @@ padding: 20px 0px;
       max-width: 220px;
       width: 100%;
   }
+  .search-bar input{
+    width: 150px;
+  }
     .title h1{
         font-size: 31px;
         line-height: 40px;
