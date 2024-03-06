@@ -399,12 +399,16 @@ padding: 20px 0px;
     .store-icons {
         display: none !important;
     }
+    .search-bar {
+      max-width: 220px;
+      width: 100%;
+  }
     .title h1{
         font-size: 31px;
         line-height: 40px;
     }
     .menu-items ul li a{
-        font-size: 22px;
+        font-size: 20px;
     }
     .footer-item ul{
         display: flex;
