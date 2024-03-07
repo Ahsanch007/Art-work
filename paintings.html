@@ -39,7 +39,7 @@
                 <div class="menu-items">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="trendingArtwork.html">
                                 Art Works
                             </a>
                         </li>
@@ -172,7 +172,7 @@
                             <h3 class="m-0" style="font-size: 20px;">Name of Artist</h3>
                         </div>
                         <div class="py-3" style="position: relative;">
-                            <div class="row m-0"
+                            <div class="row m-0" id="firstCOmponent"
                                 style="flex-wrap: nowrap; overflow: hidden; overflow-x: auto; position: relative;">
                                 <div class="col-sm-6 col-md-4 col-12 p-0">
                                     <a href="#" style="text-decoration: none;">
@@ -308,7 +308,7 @@
                             <h3 class="m-0" style="font-size: 20px;">Name of Artist</h3>
                         </div>
                         <div class="py-3" style="position: relative;">
-                            <div class="row m-0"
+                            <div class="row m-0" id="secondComponent"
                                 style="flex-wrap: nowrap; overflow: hidden; overflow-x: auto; position: relative;">
                                 <div class="col-sm-6 col-md-4 col-12 p-0">
                                     <a href="#" style="text-decoration: none;">
@@ -444,7 +444,7 @@
                             <h3 class="m-0" style="font-size: 20px;">Name of Artist</h3>
                         </div>
                         <div class="py-3" style="position: relative;">
-                            <div class="row m-0 row-3"
+                            <div class="row m-0 row-3" id="thirdComponent"
                                 style="flex-wrap: nowrap; overflow: hidden; overflow-x: auto; position: relative;">
                                 <div class="col-sm-6 col-md-4 col-12 p-0">
                                     <a href="#" style="text-decoration: none;">
@@ -662,20 +662,41 @@
             // Set the amount of pixels to move the columns
             var columnMoveAmount = 300;
 
-            // Function to handle click event on the right arrow
-            function handleRightArrowClick(arrowId) {
-                $("#" + arrowId).on("click", function () {
-                    // Move the columns to the left by the specified amount
-                    $(".row.m-0").animate({
-                        scrollLeft: "+=" + columnMoveAmount
-                    }, "slow");
-                });
-            }
+            // Handle click event on the right arrow
+            $("#rightArrow").on("click", function () {
+                // Move the columns to the left by the specified amount
+                $("#firstCOmponent").animate({
+                    scrollLeft: "+=" + columnMoveAmount
+                }, "slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Set the amount of pixels to move the columns
+            var columnMoveAmount = 300;
 
-            // Use the function for each arrow
-            handleRightArrowClick("rightArrow");
-            handleRightArrowClick("rightArrow2");
-            handleRightArrowClick("rightArrow3");
+            // Handle click event on the right arrow
+            $("#rightArrow2").on("click", function () {
+                // Move the columns to the left by the specified amount
+                $("#secondComponent").animate({
+                    scrollLeft: "+=" + columnMoveAmount
+                }, "slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Set the amount of pixels to move the columns
+            var columnMoveAmount = 300;
+
+            // Handle click event on the right arrow
+            $("#rightArrow3").on("click", function () {
+                // Move the columns to the left by the specified amount
+                $("#thirdComponent").animate({
+                    scrollLeft: "+=" + columnMoveAmount
+                }, "slow");
+            });
         });
     </script>
 

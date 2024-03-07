@@ -43,10 +43,11 @@
 }
 
 .menu-items ul li a {
-    color: black;
+    color: rgb(97, 91, 91);
     text-transform: capitalize;
     text-decoration: none;
     font-size: 25px;
+    font-weight: 700;
 }
 
 .title h1 {
@@ -137,12 +138,15 @@ padding: 20px 0px;
     padding: 0;
 }
 .footer-item ul li a{
-    color: black;
+    color: rgb(97, 91, 91);
     text-transform: uppercase;
     text-decoration: none;
     font-size: 22px;
     padding: 0px 20px;
-    font-weight: 600;
+    font-weight: 700;
+}
+.card-content h3{
+  font-weight: 700 !important;
 }
 
 
